@@ -6,13 +6,16 @@ module.exports = {
   entry: './src/index.js',
   mode: 'development',
   devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    allowedHosts: 'all',
     open: true,
     contentBase: './dist',
     address: '127.0.0.1',
     port: 8080,
     hot: true,
     writeToDisk: true,
-    clientLogLevel: "warn"
   },
   output: {
     filename: '[name].bundle-dev.js',
@@ -35,7 +38,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/env']
+            presets: ['@babel/env'],
           }
         },
         exclude: /node_modules/

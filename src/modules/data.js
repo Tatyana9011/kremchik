@@ -1,7 +1,7 @@
 export let data = [
     {
         "id":"1",
-        "src":"/img/1.jpg",
+        "src":"img/1.jpg",
         "price":[200],
         "title":"ILLUSTRIOUS ГЕЛЬ ДЛЯ ВМИВАННЯ З АНА",
         "navLink":"базовий догляд",
@@ -10,7 +10,7 @@ export let data = [
     },
     {
         "id":"2",
-        "src":"/img/2.jpg",
+        "src":"img/2.jpg",
         "price":[200],
         "title":"Мягкий очищающий гель для лица Christina Bio Phyto 1 Mild Facial Cleanser", 
         "navLink":"базовий догляд",
@@ -19,7 +19,7 @@ export let data = [
     },
     {
         "id":"3",
-        "src":"/img/3.jpg",
+        "src":"img/3.jpg",
         "navLink":"базовий догляд",
         "price":[200],
         "title":"Гель для очищення Christina Forever Young Moisturizing Facial Wash",
@@ -28,7 +28,7 @@ export let data = [
     },
     {
         "id":"4",
-        "src":"/img/4.jpg",
+        "src":"img/4.jpg",
         "navLink":"сироватки",
         "price":[395],
         "title":"Цукрове мило для обличчя <br/> Holy Land Acnox Sugar Soap",
@@ -37,7 +37,7 @@ export let data = [
     },
     {
         "id":"5",
-        "src":"/img/5.jpg",
+        "src":"img/5.jpg",
         "price":[245, 345, 600, 700],
         "navLink":"крема",
         "title":"Цукрове мило для обличчя         Holy Land Acnox Sugar Soap",
@@ -46,7 +46,7 @@ export let data = [
     },
     {
         "id":"6",
-        "src":"/img/6.jpg",
+        "src":"img/6.jpg",
         "price":[78, 600],
         "navLink":"маски",
         "title":";OLNHLIWYDVEFJYR OEAUJBRGFIQ3B",
@@ -55,7 +55,7 @@ export let data = [
     },
     {
         "id":"7",
-        "src":"/img/7.jpg",
+        "src":"img/7.jpg",
         "price":[90],
         "navLink":"маски",
         "title":"Маска Christina Illustrious",

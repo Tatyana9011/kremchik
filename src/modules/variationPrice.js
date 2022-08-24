@@ -4,8 +4,6 @@ export function variationPrice(select,data){
     select.addEventListener('change', event=>{
         const target = event.target;
         const value = parseInt(target.value);
-        console.log('value: ', value);
-        
         const index = data.variation.findIndex(obyom=>obyom===value)
         price.textContent = `${data.price[index]} грн`;
     })
