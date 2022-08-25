@@ -35,7 +35,7 @@ document.addEventListener('click', event => {
         viber.classList.remove('show');
         telegram.classList.remove('show');
         instagramm.classList.remove('show');
-    }else if(target.matches('.fixed')||target.matches('svg')||target.matches('path')){
+    }else if(target.closest('.fixed')){
         kontactsFixed(target)
     }else if(target.matches('.header_nav_item')){
         filter(target)

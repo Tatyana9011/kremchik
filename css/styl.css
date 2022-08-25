@@ -102,6 +102,7 @@ ul {
 .card{
     position: relative;
     width: 22%;
+    margin-top: 15px;
     height: 580px;
     border-radius: 3%;
     border: 1px solid rgba(28, 195, 134, 0.2);
@@ -189,6 +190,7 @@ ul {
     box-shadow:  5px 5px rgba(37, 127, 94, 0.2);
     border: 2px solid #53957a;
     background-color: #ffff; 
+
 }
 
 .viber{
@@ -204,6 +206,7 @@ ul {
     bottom: 10px;
     right: 120px;
     cursor: pointer;
+    display: none;
     opacity: 0;
     transition: all .3s ease-in-out;
 }
@@ -219,6 +222,7 @@ ul {
     position: fixed;
     bottom: 100px;
     right: 50px;
+    display: none;
     cursor: pointer;
     opacity: 0;    
     transition: all .3s ease-in-out;
@@ -237,11 +241,13 @@ ul {
     position: fixed;
     bottom: 70px;
     right: 110px;
+    display: none;
     cursor: pointer;
     opacity: 0;
     transition: all .3s ease-in-out;
 }
 .show{
+    display: inline;
     opacity: 1;
 }
 
@@ -269,9 +275,11 @@ ul {
     background-color: #ffff;
     position: absolute;
     top: 5%;
+    bottom: 5%;
 }
 .modal .card{
     width: 100%;
+    height: 100%;
     border: none;
     box-shadow:none;
     display: flex;
@@ -352,7 +360,10 @@ ul {
 .open {
     right: 0 !important;
   }
-
+.card_variation{
+    height: 100%;
+    padding-bottom: 50px;
+}
 @media (max-width: 1199px) {
    .container{
     width: 100%;
@@ -360,6 +371,7 @@ ul {
     .card{
         width: 25%;
         margin: 0;
+        margin-top: 5px;
         margin-bottom: 10px;
     }
     .card_price{
@@ -373,6 +385,7 @@ ul {
     }
     .modal{
         width: 75%;
+        height: 100%;
         
     }
     .modal .card_discription{
@@ -397,7 +410,6 @@ ul {
     }
     .modal{
         width: 75%;
-        
     }
    
     .modal .card_discription{
@@ -414,6 +426,7 @@ ul {
   @media (max-width: 960px) {
     .card{
         margin: 0;
+        margin-top: 5px;
         margin-bottom: 10px;
     }
     .modal_img{
@@ -438,15 +451,16 @@ ul {
         position: fixed;
         display: flex;
         flex-direction: column;
+        margin: 0;
         top: 0;
         right: -410px;
-        background: rgba(28, 195, 134, 0.5);
+        background: rgba(29, 155, 109, 0.8);
         height: 100%;
         width: 370px;
         max-width: 100%;
         z-index: 1000;
         overflow-y: scroll;
-        padding-top: 20px;
+        padding-top: 30px;
         -webkit-transition: all 200ms ease-out;
         -moz-transition: all 200ms ease-out;
         -o-transition: all 200ms ease-out;
@@ -459,6 +473,7 @@ ul {
     .card{
         width: 30%;
         margin: 0;
+        margin-top: 5px;
         margin-bottom: 10px;
     }
     .modal_img{
@@ -485,7 +500,7 @@ ul {
     }
     .modal_img{
         width: 50%;
-        height: 50%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -498,14 +513,48 @@ ul {
         flex-direction: column;
         align-items: center;
     }
+    .card_variation{
+        padding-bottom: 50px;
+    }
   }
 
   @media (max-width: 500px) {
-   .modal_img{
-        width: 75%;
-        height: 75%;
+    .card{
+        height: 450px;
+    }
+    .modal_img{
+        width: 50%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-  }
+    .card_img{
+        width: 100%;
+        height: 233px;
+    }
+    .card_details{
+        left: 5%;
+    }
+    .card_title{
+        font-size: 16px;
+    }
+    .header_logo img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .header_title{
+        font-size: 20px;
+    }
+    .modal .card_title{
+        font-size: 16px;
+    }
+    .modal{
+        top:0;
+    }
+    .modal .card{
+        height: 100%;
+    }
+    
+}
