@@ -485,7 +485,7 @@ ul {
     }
     .modal_img{
         width: 50%;
-        height: 100%;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -503,7 +503,7 @@ ul {
   @media (max-width: 500px) {
    .modal_img{
         width: 75%;
-        height: 100%;
+        height: 75%;
         display: flex;
         justify-content: center;
         align-items: center;
