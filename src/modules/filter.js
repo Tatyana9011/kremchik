@@ -10,6 +10,7 @@ export function filter(target){
     links.forEach(link => link.style.textDecoration =  'none');
 
     target.style.textDecoration =  'underline';
+    title.textContent = target.textContent.substring(0,1).toUpperCase()+target.textContent.substring(1).toLowerCase();
 
     const newData = data.filter(item=>item.navLink===target.textContent);
 

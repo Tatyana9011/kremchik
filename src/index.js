@@ -27,7 +27,6 @@ document.addEventListener('click', event => {
         headerNavList.classList.toggle('open');
     }
     
-
     if(target.matches('.card_details')){
 		modal(target)
 	}else if(!fixed.matches('.anima')){

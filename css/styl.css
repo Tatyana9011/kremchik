@@ -558,3 +558,16 @@ ul {
     }
     
 }
+@media (max-width: 370px) {
+    .card_title{
+        font-size: 14px;
+    }
+    .card_details{
+        left: 0;
+        margin: 12px 20px 12px 20px;
+    }
+    .card_price{
+        bottom: 15%;
+        left: 30%;
+    }
+}
